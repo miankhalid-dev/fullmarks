@@ -205,12 +205,11 @@ ul {
   position: absolute;
   top: 0;
   left: 100%;
-  margin-left: 8px;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 12px 32px oklch(20% 0.02 260 / 0.12);
-  padding: 14px 18px;
+  padding: 14px 18px 14px 26px;
   flex-direction: column;
   gap: 8px;
   min-width: 140px;
@@ -283,6 +282,13 @@ ul {
   background: var(--card-bg);
   color: var(--ink);
   cursor: pointer;
+}
+
+.signup-btn {
+  background: var(--navy);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
 }
 
 .cart-pill {

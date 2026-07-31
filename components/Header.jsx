@@ -59,6 +59,9 @@ export default function Header() {
       <div className="header-actions">
         <CurrencySelect />
         <a href="#">Sign in</a>
+        <a href="#" className="signup-btn">
+          Sign up
+        </a>
         <div className="cart-pill">
           <span aria-hidden="true">🛒</span>
           <span>Cart</span>
