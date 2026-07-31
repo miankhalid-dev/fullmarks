@@ -137,10 +137,33 @@ ul {
   z-index: 30;
 }
 
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
 .site-header__logo {
-  height: 56px;
+  height: 40px;
   width: auto;
   flex-shrink: 0;
+}
+
+.site-header__wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.site-header__wordmark-full {
+  color: var(--orange);
+}
+
+.site-header__wordmark-marks {
+  color: var(--navy);
 }
 
 .mega-nav {
@@ -1159,6 +1182,24 @@ ul {
 
   .site-header {
     padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .site-header__logo {
+    height: 32px;
+  }
+
+  .site-header__wordmark {
+    font-size: 18px;
+  }
+
+  .header-actions {
+    order: 5;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 8px;
+    margin-left: 0;
   }
 
   .hero {

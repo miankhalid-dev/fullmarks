@@ -20,11 +20,17 @@ const MEGA_MENUS = [
 export default function Header() {
   return (
     <header className="site-header fade-up-fast" style={{ animationDelay: "0.05s" }}>
-      <img
-        src="/assets/fullmarks-logo-cropped.png"
-        alt="Fullmarks"
-        className="site-header__logo"
-      />
+      <Link href="/" className="site-header__brand">
+        <img
+          src="/assets/fullmarks-mark.png"
+          alt=""
+          className="site-header__logo"
+        />
+        <span className="site-header__wordmark">
+          <span className="site-header__wordmark-full">Full</span>
+          <span className="site-header__wordmark-marks">marks</span>
+        </span>
+      </Link>
 
       <nav className="mega-nav">
         {MEGA_MENUS.map((menu) => (
