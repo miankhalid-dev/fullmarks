@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CurrencySelect from "@/components/CurrencySelect";
 
 const MEGA_MENUS = [
@@ -58,10 +59,10 @@ export default function Header() {
 
       <div className="header-actions">
         <CurrencySelect />
-        <a href="#">Sign in</a>
-        <a href="#" className="signup-btn">
+        <Link href="/sign-in">Sign in</Link>
+        <Link href="/sign-up" className="signup-btn">
           Sign up
-        </a>
+        </Link>
         <div className="cart-pill">
           <span aria-hidden="true">🛒</span>
           <span>Cart</span>
