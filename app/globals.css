@@ -289,6 +289,14 @@ ul {
   color: white;
   padding: 8px 14px;
   border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.signup-btn:hover {
+  color: white;
+  background: var(--navy-dark);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px oklch(20% 0.05 255 / 0.25);
 }
 
 .cart-pill {
@@ -301,6 +309,12 @@ ul {
   border-radius: 10px;
   cursor: pointer;
   flex-shrink: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cart-pill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px oklch(20% 0.05 255 / 0.25);
 }
 
 /* ---------- Hero ---------- */
