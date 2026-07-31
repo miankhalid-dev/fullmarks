@@ -385,8 +385,9 @@ ul {
   color: var(--navy);
 }
 
-.hero-check span {
+.hero-check svg {
   color: var(--orange);
+  flex-shrink: 0;
 }
 
 .hero-actions {
@@ -434,6 +435,12 @@ ul {
   margin-top: 8px;
   font-size: 14px;
   color: var(--ink-secondary);
+}
+
+.hero-stat span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .hero-visual {
@@ -517,7 +524,7 @@ ul {
 }
 
 .curriculum-card__icon {
-  font-size: 28px;
+  color: var(--navy);
 }
 
 .curriculum-card__name {
@@ -562,20 +569,18 @@ ul {
   background: var(--orange-tint);
 }
 
-.format-card__icon {
-  font-size: 26px;
-}
-
 .format-card__title {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 19px;
 }
 
+.format-card--notes .format-card__icon,
 .format-card--notes .format-card__title {
   color: var(--navy);
 }
 
+.format-card--papers .format-card__icon,
 .format-card--papers .format-card__title {
   color: var(--orange);
 }
@@ -635,7 +640,7 @@ ul {
 }
 
 .subject-card__icon {
-  font-size: 24px;
+  color: var(--navy);
 }
 
 .subject-card__name {
@@ -726,8 +731,15 @@ ul {
 }
 
 .product-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 13px;
   color: var(--ink-secondary);
+}
+
+.product-card__meta svg {
+  color: var(--orange);
 }
 
 .product-card__footer {

@@ -1,8 +1,10 @@
+import { BookOpen, Globe2, GraduationCap, BookMarked } from "lucide-react";
+
 const CURRICULA = [
-  { icon: "📗", name: "GCSE", count: "1,800" },
-  { icon: "🌍", name: "IGCSE", count: "1,400" },
-  { icon: "🎓", name: "IB (MYP & DP)", count: "1,100" },
-  { icon: "📘", name: "A-Level", count: "1,900" },
+  { icon: BookOpen, name: "GCSE", count: "1,800" },
+  { icon: Globe2, name: "IGCSE", count: "1,400" },
+  { icon: GraduationCap, name: "IB (MYP & DP)", count: "1,100" },
+  { icon: BookMarked, name: "A-Level", count: "1,900" },
 ];
 
 export default function CurriculumSection() {
@@ -12,7 +14,9 @@ export default function CurriculumSection() {
       <div className="curriculum-grid">
         {CURRICULA.map((c) => (
           <div className="curriculum-card" key={c.name}>
-            <div className="curriculum-card__icon">{c.icon}</div>
+            <div className="curriculum-card__icon">
+              <c.icon size={28} aria-hidden="true" />
+            </div>
             <div className="curriculum-card__name">{c.name}</div>
             <div className="curriculum-card__count">{c.count} resources</div>
           </div>

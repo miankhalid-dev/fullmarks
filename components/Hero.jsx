@@ -1,3 +1,5 @@
+import { Check, BookOpen } from "lucide-react";
+
 export default function Hero() {
   return (
     <section className="hero fade-up" style={{ animationDelay: "0.1s" }}>
@@ -17,11 +19,11 @@ export default function Hero() {
         </p>
 
         <div className="hero-check">
-          <span aria-hidden="true">✓</span> Written specifically for AQA,
+          <Check size={16} aria-hidden="true" /> Written specifically for AQA,
           Edexcel, OCR, CAIE, IB &amp; more
         </div>
         <div className="hero-check">
-          <span aria-hidden="true">✓</span> 100% specification coverage, board
+          <Check size={16} aria-hidden="true" /> 100% specification coverage, board
           by board
         </div>
 
@@ -35,7 +37,9 @@ export default function Hero() {
         </div>
 
         <div className="hero-stat">
-          <span>📚 6,000+ resources</span>
+          <span>
+            <BookOpen size={16} aria-hidden="true" /> 6,000+ resources
+          </span>
         </div>
       </div>
 

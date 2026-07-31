@@ -1,14 +1,25 @@
+import {
+  Calculator,
+  Sigma,
+  FlaskConical,
+  Dna,
+  Atom,
+  TrendingUp,
+  Briefcase,
+  Laptop,
+} from "lucide-react";
+
 const BOARD_FILTERS = ["All boards", "AQA", "Edexcel", "OCR", "Cambridge (CIE)"];
 
 const SUBJECTS = [
-  { icon: "🧮", name: "Maths" },
-  { icon: "➗", name: "Further Maths" },
-  { icon: "⚗️", name: "Chemistry" },
-  { icon: "🧬", name: "Biology" },
-  { icon: "⚛️", name: "Physics" },
-  { icon: "📈", name: "Economics" },
-  { icon: "💼", name: "Business" },
-  { icon: "💻", name: "Computer Science" },
+  { icon: Calculator, name: "Maths" },
+  { icon: Sigma, name: "Further Maths" },
+  { icon: FlaskConical, name: "Chemistry" },
+  { icon: Dna, name: "Biology" },
+  { icon: Atom, name: "Physics" },
+  { icon: TrendingUp, name: "Economics" },
+  { icon: Briefcase, name: "Business" },
+  { icon: Laptop, name: "Computer Science" },
 ];
 
 export default function SubjectsSection() {
@@ -30,7 +41,9 @@ export default function SubjectsSection() {
       <div className="subject-grid">
         {SUBJECTS.map((s) => (
           <div className="subject-card" key={s.name}>
-            <div className="subject-card__icon">{s.icon}</div>
+            <div className="subject-card__icon">
+              <s.icon size={24} aria-hidden="true" />
+            </div>
             <div className="subject-card__name">{s.name}</div>
           </div>
         ))}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Search, ShoppingCart } from "lucide-react";
 import CurrencySelect from "@/components/CurrencySelect";
 
 const MEGA_MENUS = [
@@ -52,7 +53,7 @@ export default function Header() {
 
       <div className="header-search">
         <div className="header-search__bar">
-          <span aria-hidden="true">🔍</span>
+          <Search size={17} aria-hidden="true" />
           <span>Search subjects, boards, topics…</span>
         </div>
       </div>
@@ -64,7 +65,7 @@ export default function Header() {
           Sign up
         </Link>
         <div className="cart-pill">
-          <span aria-hidden="true">🛒</span>
+          <ShoppingCart size={17} aria-hidden="true" />
           <span>Cart</span>
         </div>
       </div>

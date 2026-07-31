@@ -1,5 +1,6 @@
 "use client";
 
+import { Star } from "lucide-react";
 import { useCurrency } from "@/lib/currency-context";
 
 const PRODUCTS = [
@@ -65,7 +66,8 @@ export default function ProductsSection() {
               </div>
               <div className="product-card__title">{p.title}</div>
               <div className="product-card__meta">
-                ⭐ {p.rating} · {p.sales} sold
+                <Star size={13} fill="currentColor" aria-hidden="true" /> {p.rating} · {p.sales}{" "}
+                sold
               </div>
               <div className="product-card__footer">
                 <div className="product-card__price">{formatPrice(p.priceGBP)}</div>
